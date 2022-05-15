@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facturacion</title>
+    <link rel="stylesheet" href="estilo.css" >
+</head>
+<body>
+ 
+    
+
+    <header>
+        <div class="perfil">      
+            <img  class="avion1"     src="avion.png" width="50px"   height="50px" alt="TE FALTA  el avion">  </div>
+        
+        
+        <nav>
+           
+           
+            <ul>
+                
+
+                <li><a href="http://localhost:82/aereo52/">Inicio</a></li>
+                <li><a href="http://localhost:82/Tabla-datos-grid/">Editar</a></li>
+                <li><a href="#">Directivas</a></li>
+                <li><a href="#">Preguntas </a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <div class="formulario">
+    <form action="formu.php" method="post">
+     <table>
+        <tr>
+         
+            <td><input type="date" placeholder="fecha" name="fecha" required></td>
+        </tr>
+        <tr>
+         
+            <td><input type="text" placeholder="unidad" name="unidad" required></td>
+        </tr>
+         <tr>
+          
+             <td><input type="number" placeholder="Nro de Factura" name="factura" required></td>
+         </tr>
+         <tr>
+            
+            <td><input type="number" placeholder="Nro de Reserva" name="reserva" required></td>
+        </tr>
+        <tr>
+         
+           
+           
+            <tr>
+         
+                <td><select class="seleccion" name="tipo" required>
+                    <option selected hidden value="">Tipo</option>
+                    <option value="ASISCARD">ASISCARD</option>
+                    <option value="NOTA DE DEBITO">NOTA DE DEBITO</option>
+                    <option value="NOTA DE CREDITO">NOTA DE CREDITO</option>
+                    <!-- <option value="database">A FAVOR</option> -->
+                    <option value="FACTURA">FACTURA</option>
+                </select>
+                    
+                </td>
+            </tr>
+        </tr>
+        <tr>
+         
+            <td><input type="text" placeholder="Desde Hasta" name="destino" required></td>
+        </tr>
+        <tr>
+     
+            <td><input type="text" placeholder="Nombre" name="apeynom" required></td>
+        </tr>
+        <tr>
+        
+            <td><input type="number" name="importe" placeholder="importe"></td>
+
+        <tr>
+            <td>
+                <input type="submit" value="INGRESAR" name="enviar">
+            </td>
+        </tr>
+     </table>
+
+
+    </form>
+
+</div>    
+</body>
+</html>
+
+
